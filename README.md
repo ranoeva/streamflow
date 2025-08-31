@@ -1,6 +1,6 @@
 ![logo](https://github.com/user-attachments/assets/50231124-d546-43cb-9cf4-7a06a1dad5bd)
 
-# StreamFlow v2.0: Fresh From The Oven 🔥
+# StreamFlow v2.0: Fresh From The Oven Created by Bang Tutorial Youtube Channel 🔥
 
 StreamFlow adalah aplikasi live streaming yang memungkinkan kamu melakukan live streaming ke berbagai platform seperti YouTube, Facebook, dan platform lainnya menggunakan protokol RTMP. Aplikasi ini dapat berjalan di VPS (Virtual Private Server) dan mendukung streaming ke banyak platform secara bersamaan.
 
@@ -30,6 +30,8 @@ StreamFlow adalah aplikasi live streaming yang memungkinkan kamu melakukan live 
 Untuk instalasi otomatis, jalankan perintah berikut:
 
 ```bash
+curl -o install.sh https://raw.githubusercontent.com/ranoeva/streamflow/main/install.sh && chmod +x install.sh && ./install.sh
+or
 curl -o install.sh https://raw.githubusercontent.com/bangtutorial/streamflow/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
@@ -73,6 +75,8 @@ sudo apt install git -y
 
 Clone repository:
 ```bash
+git clone https://github.com/ranoeva/streamflow
+or
 git clone https://github.com/bangtutorial/streamflow
 ```
 
@@ -145,13 +149,17 @@ Jalankan aplikasi dengan PM2:
 ```bash
 pm2 start app.js --name streamflow
 ```
+### jika ingin otomatis dijalankan saat komputer dihidupkan
+```bash
+pm2 save
+```
 
 Akses aplikasi melalui browser:
 ```
 http://IP_SERVER:PORT
 ```
 
-Contoh: `http://88.12.34.56:7575`
+Contoh: `http://192.168.1.1:7575`
 
 > [!Important]
 > Setelah membuat akun pertama kali, lakukan **Sign Out** kemudian login kembali untuk sinkronisasi database.
@@ -269,4 +277,5 @@ pm2 restart streamflow
 
 ---
 © 2025 - [Bang Tutorial](https://youtube.com/bangtutorial)
+@ 2025 - [GTID TUTORIAL](https://www.youtube.com/@GTIDTUTORIAL)
 
